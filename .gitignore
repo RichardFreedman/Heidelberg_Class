@@ -21,6 +21,9 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# pyvis support files, recreated whenever a network is saved as HTML
+lib/
+
 # Editors
 .vscode/
 .idea/

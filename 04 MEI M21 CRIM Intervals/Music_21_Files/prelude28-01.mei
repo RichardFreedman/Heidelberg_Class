@@ -45,7 +45,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application isodate="2026-07-08T16:20:06" version="5.5.0-8c9036d">
+            <application isodate="2026-09-27T17:27:08" version="5.5.0-8c9036d">
                <name>Verovio</name>
                <p>Transcoded from Humdrum</p>
             </application>
@@ -194,46 +194,46 @@
    </meiHead>
    <music decls="#work0_encoded">
       <body>
-         <mdiv xml:id="reqrc5r">
-            <score xml:id="smguwww">
-               <scoreDef xml:id="t1w3o803" midi.bpm="80" tempo.dist="3vu">
-                  <pgHead xml:id="d1hf9kfy" func="first">
-                     <rend xml:id="e1si9d8h" halign="center" valign="middle">
-                        <rend xml:id="f1ui1ikm" fontsize="large">Prelude in C Minor, Op. 28, No. 1</rend>
-                        <lb xml:id="h1b0jdsy" /> 
-<lb xml:id="jbkal2x" />
+         <mdiv xml:id="y1k9uf2n">
+            <score xml:id="z15tb2gt">
+               <scoreDef xml:id="aon6p9k" midi.bpm="80" tempo.dist="3vu">
+                  <pgHead xml:id="k9wmdvc" func="first">
+                     <rend xml:id="lzz2764" halign="center" valign="middle">
+                        <rend xml:id="m15d9tgk" fontsize="large">Prelude in C Minor, Op. 28, No. 1</rend>
+                        <lb xml:id="ofwjxe4" /> 
+<lb xml:id="qenzogw" />
                      </rend>
-                     <rend xml:id="lx61v50" halign="right" valign="bottom" fontsize="small">Frederic Chopin</rend>
-                     <rend xml:id="n1dm4f2v" halign="right" valign="bottom" fontsize="small">1810–49</rend>
+                     <rend xml:id="s15nsn62" halign="right" valign="bottom" fontsize="small">Frederic Chopin</rend>
+                     <rend xml:id="uq48lfc" halign="right" valign="bottom" fontsize="small">1810–49</rend>
                   </pgHead>
-                  <staffGrp xml:id="y1v2ryi4" symbol="bracket">
+                  <staffGrp xml:id="fgi8ssb" symbol="bracket">
                      <staffDef xml:id="staffdef-L14F4" n="1" lines="5">
                         <label xml:id="label-L15F4">Piano</label>
                         <clef xml:id="clef-L17F4" shape="G" line="2" />
                         <keySig xml:id="keysig-L18F4" mode="major" sig="0" pname="c" />
                         <meterSig xml:id="metersig-L20F4" count="2" unit="8" />
-                        <instrDef xml:id="k10er2lc" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
+                        <instrDef xml:id="r1b92nz6" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
                      </staffDef>
                      <staffDef xml:id="staffdef-L14F3" n="2" lines="5">
                         <label xml:id="label-L15F3">Piano</label>
                         <clef xml:id="clef-L17F3" shape="G" line="2" />
                         <keySig xml:id="keysig-L18F3" mode="major" sig="0" pname="c" />
                         <meterSig xml:id="metersig-L20F3" count="2" unit="8" />
-                        <instrDef xml:id="x1aldgm0" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
+                        <instrDef xml:id="e1w1gyxh" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
                      </staffDef>
                      <staffDef xml:id="staffdef-L14F2" n="3" lines="5">
                         <label xml:id="label-L15F2">Piano</label>
                         <clef xml:id="clef-L17F2" shape="F" line="4" />
                         <keySig xml:id="keysig-L18F2" mode="major" sig="0" pname="c" />
                         <meterSig xml:id="metersig-L20F2" count="2" unit="8" />
-                        <instrDef xml:id="k1kyfaur" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
+                        <instrDef xml:id="r9sn4kv" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
                      </staffDef>
                      <staffDef xml:id="staffdef-L14F1" n="4" lines="5">
                         <label xml:id="label-L15F1">Piano</label>
                         <clef xml:id="clef-L17F1" shape="F" line="4" />
                         <keySig xml:id="keysig-L18F1" mode="major" sig="0" pname="c" />
                         <meterSig xml:id="metersig-L20F1" count="2" unit="8" />
-                        <instrDef xml:id="x1l6rcg0" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
+                        <instrDef xml:id="e1djqg6v" midi.instrnum="0" midi.instrname="Acoustic_Grand_Piano" />
                      </staffDef>
                   </staffGrp>
                </scoreDef>
