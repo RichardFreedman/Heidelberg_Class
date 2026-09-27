@@ -1,0 +1,56 @@
+{
+  "Morley_1595_01_Go_ye_my_canzonettes": {
+    "title": "Go ye my canzonettes",
+    "composer": "Morley, Thomas",
+    "mei_path": "MEI Sample/Morley_1595_01_Go_ye_my_canzonettes.mei",
+    "num_parts": 2
+  },
+  "Morley_1595_02_When_lo_by_break": {
+    "title": "When lo by break",
+    "composer": "Morley, Thomas",
+    "mei_path": "MEI Sample/Morley_1595_02_When_lo_by_break.mei",
+    "num_parts": 2
+  },
+  "Bartok_Mikrokosmos_022": {
+    "title": "Mikrokosmos No. 22: Imitation and Counterpoint",
+    "composer": "Bart\u00f3k, B\u00e9la",
+    "mei_path": "MEI Sample/Bartok_Mikrokosmos_022.mei",
+    "num_parts": 2
+  },
+  "Bartok_Mikrokosmos_023": {
+    "title": "Mikrokosmos No. 23: Imitation and Inversion (1)",
+    "composer": "Bart\u00f3k, B\u00e9la",
+    "mei_path": "MEI Sample/Bartok_Mikrokosmos_023.mei",
+    "num_parts": 2
+  },
+  "Morley_1595_03_Sweet_nymph": {
+    "title": "Sweet nymph",
+    "composer": "Morley, Thomas",
+    "mei_path": "MEI Sample/Morley_1595_03_Sweet_nymph.mei",
+    "num_parts": 2
+  },
+  "Bartok_Mikrokosmos_024": {
+    "title": "Mikrokosmos No. 24: Pastorale",
+    "composer": "Bart\u00f3k, B\u00e9la",
+    "mei_path": "MEI Sample/Bartok_Mikrokosmos_024.mei",
+    "num_parts": 2
+  },
+  "Bach_BWV_0772": {
+    "title": "Invention No. 1 in C major",
+    "composer": "Bach, Johann Sebastian",
+    "mei_path": "MEI Sample/Bach_BWV_0772.mei",
+    "num_parts": 2
+  },
+  "Bach_BWV_0773": {
+    "title": "Invention No. 2 in C minor",
+    "composer": "Bach, Johann Sebastian",
+    "mei_path": "MEI Sample/Bach_BWV_0773.mei",
+    "num_parts": 2
+  },
+  "Bach_BWV_0774": {
+    "title": "Invention No. 3 in D major",
+    "composer": "Bach, Johann Sebastian",
+    "mei_path": "MEI Sample/Bach_BWV_0774.mei",
+    "num_parts": 2
+  }
+}
