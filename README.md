@@ -11,7 +11,7 @@ The notebooks build on one another, from the basics of Python and data tables, t
 4. **MEI, music21, and CRIM Intervals**: encoded *music*: notes, intervals, patterns, and corpora
 5. **LLM Analysis**: what Large Language Models can (and cannot) tell us about music
 
-**How to use these notebooks:** open them in JupyterHub and run the cells in order, top to bottom. Within each folder, work through the notebooks in alphabetical order (A, B, ...). In the Beatles folder this matters: each notebook saves a file that the next one loads.
+**How to use these notebooks:** open them in JupyterHub and run the cells in order, top to bottom. Within each folder, work through the notebooks in alphabetical order (A, B, ...). In the Beatles folder this matters: notebooks B and C each save a file that the later notebooks load.
 
 ## Notebooks
 
@@ -24,35 +24,43 @@ The notebooks build on one another, from the basics of Python and data tables, t
 - Data types, string methods, and type conversion
 - Lists and dictionaries
 
-**[B_Pandas_Basics.ipynb](01_Python%20Pandas%20Basics%20/B_Pandas_Basics.ipynb)**: An introduction to the **DataFrame**, the table at the heart of data analysis in Python, using metadata about Renaissance pieces from the [CRIM Project](https://crimproject.org). Students load live data from the CRIM website, then learn to inspect a table, select and reshape its rows and columns, sort and count, and combine two tables into one. A closing section shows why Pandas' built-in methods are usually better than writing loops.
-- Loading JSON data into a DataFrame
-- Inspecting, selecting (`loc`, `iloc`), adding, dropping, and renaming
-- Sorting and counting (`sort_values`, `value_counts`)
-- Combining tables (`concat`, `merge`)
+**[B_Pandas_Basics_Beatles.ipynb](01_Python%20Pandas%20Basics%20/B_Pandas_Basics_Beatles.ipynb)**: An introduction to the **DataFrame**, the table at the heart of data analysis in Python.  Here we use the Beatles dataset, `Beatles_Belgrade_Complete.csv`, to show how to load a CSV file into a DataFrame, inspect its rows and columns, select and reshape data, sort and count values, and combine two tables into one. A closing section shows why Pandas' built-in methods are usually better than writing loops.
+
+**[C_Pandas_Basics_CRIM.ipynb](01_Python%20Pandas%20Basics%20/C_Pandas_Basics_CRIM.ipynb)**: Here we work with the CRIM project dataset to show how to work with complex JSON and flatten it into a DataFrame. Students learn to read JSON, normalize nested structures, and combine multiple files into one table. They also learn how to save their work as a CSV or Pickle file for later use.
+- Loading CSV and JSON files into DataFrames
+- Inspecting, selecting, and reshaping data
+- Sorting, counting, and combining tables
 
 ### 02 The Beatles: Clean, Tidy, Find, Filter, Group, and Chart
 
 *The big idea: a complete data workflow, from a messy spreadsheet to research questions and charts. Every step involves decisions that shape what the data can tell us.*
 
-These four notebooks work with a single rich dataset, `Beatles_Belgrade_Complete.csv`. It combines **Spotify** audio features (energy, valence, danceability, ...) with metadata compiled at the **University of Belgrade**: songwriters, singers, albums, genre, style, theme and mood labels, and chart histories. Together they pursue questions such as: *How did the Beatles' sound change over time? Do Lennon, McCartney, and Harrison songs differ? Does chart success in the 1960s relate to popularity today?* The notebooks pose these questions but leave the interpretation to students.
+These five notebooks work with a single rich dataset, `Beatles_Belgrade_Complete.csv`. It combines **Spotify** audio features (energy, valence, danceability, ...) with metadata compiled at the **University of Belgrade**: songwriters, singers, albums, genre, style, theme and mood labels, and chart histories. Together they pursue questions such as: *How did the Beatles' sound change over time? Do Lennon, McCartney, and Harrison songs differ? Does chart success in the 1960s relate to popularity today?* The notebooks pose these questions but leave the interpretation to students.
 
-**[A_Beatles_Clean_Data.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/A_Beatles_Clean_Data.ipynb)**: Real data is never ready to use, and cleaning it is part of the research, not a chore before it. Students find missing values and decide what each one *means*: sometimes it should be filled, sometimes dropped, and sometimes (as with chart positions) the gap itself is information. They then fix inconsistent values with three tools of increasing power, `replace()`, `map()`, and `apply()`, and correct data types. The result is saved as `beatles_clean.pkl`.
+Notebook A is a short, self-contained introduction to the *kinds* of problems that cleaning and tidying solve. Notebooks B and C then treat each step in full, and save the files that D and E load.
+
+**[A_Beatles_Clean_Tidy_Examples.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/A_Beatles_Clean_Tidy_Examples.ipynb)**: A quick tour of four typical data problems, with one Beatles example of each. For **clean data**: missing values that carry information (an empty Billboard Top 50 rank means "not on the list," so we add a True/False column instead of filling it with 0), and inconsistent values (the same album spelled three ways, fixed with `replace()`). For **tidy data**: two variables in one column (UK and US album debuts, split into two columns), and several observations in one cell (genre tags, turned into lists and then `explode`d into one row per genre). This notebook loads the CSV directly and saves nothing, so it can be used on its own.
+- Asking what a missing value *means*
+- `notna()`, `replace()`, `str.split()`, and `explode()`
+- The two principles of tidy data, and why one row may no longer be one song
+
+**[B_Beatles_Clean_Data.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/B_Beatles_Clean_Data.ipynb)**: Real data is never ready to use, and cleaning it is part of the research, not a chore before it. Students find missing values and decide what each one *means*: sometimes it should be filled, sometimes dropped, and sometimes (as with chart positions) the gap itself is information. They then fix inconsistent values with three tools of increasing power, `replace()`, `map()`, and `apply()`, and correct data types. The result is saved as `beatles_clean.pkl`.
 - Finding and interpreting missing data
 - `replace()` vs. `map()` vs. `apply()`: which tool for which job
 - Turning multi-label text into lists
 - Reproducible cleaning, and saving to a Pickle
 
-**[B_Beatles_Tidy_Data.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/B_Beatles_Tidy_Data.ipynb)**: The principles of **Tidy Data** (one variable per column, one observation per row), and why they make questions easy to answer. Students split UK and US album releases into separate columns, `explode` genre lists into one row per genre, and `melt` wide data into the long format that charts need. They also learn the costs: exploding every label column at once turns 278 songs into tens of thousands of rows, and in tidy data one row no longer equals one song. The result is saved as `beatles_tidy_genre.pkl`.
+**[C_Beatles_Tidy_Data.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/C_Beatles_Tidy_Data.ipynb)**: The principles of **Tidy Data** (one variable per column, one observation per row), and why they make questions easy to answer. Students split UK and US album releases into separate columns, `explode` genre lists into one row per genre, and `melt` wide data into the long format that charts need. They also learn the costs: exploding every label column at once turns 278 songs into tens of thousands of rows, and in tidy data one row no longer equals one song. The result is saved as `beatles_tidy_genre.pkl`.
 - `str.split()`, `explode()`, and `melt()`
 - Choosing the right shape of data for the question
 - Counting correctly in tidy data
 
-**[C_Beatles_Find_Filter_Group.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/C_Beatles_Find_Filter_Group.ipynb)**: Almost every data-based claim rests on two moves: **filtering** (narrowing to the rows that match a condition) and **grouping** (summarizing and comparing categories). Students filter on numbers, text, and lists of labels; combine conditions; turn continuous values into categories with bins; and compare songwriters, years, albums, and genres with `groupby`. A recurring theme: a table of averages is not yet an answer. Ask how many songs stand behind each number, and how the categories were defined.
+**[D_Beatles_Find_Filter_Group.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/D_Beatles_Find_Filter_Group.ipynb)**: Almost every data-based claim rests on two moves: **filtering** (narrowing to the rows that match a condition) and **grouping** (summarizing and comparing categories). Students filter on numbers, text, and lists of labels; combine conditions; turn continuous values into categories with bins; and compare songwriters, years, albums, and genres with `groupby`. A recurring theme: a table of averages is not yet an answer. Ask how many songs stand behind each number, and how the categories were defined.
 - Boolean masks, `isin()`, `str.contains()`, and combined conditions
 - Bins with `cut()` and `qcut()`
 - `groupby()`, `agg()`, `crosstab()`, and `transform()`
 
-**[D_Beatles_Charts_Graphs.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/D_Beatles_Charts_Graphs.ipynb)**: A tour of the main chart types in [Plotly Express](https://plotly.com/python/plotly-express/), organized by the kind of question each one answers: bar charts for comparison, line charts for change over time, histograms and box plots for distributions, scatter and bubble plots for relationships, heatmaps for grids and correlations, and radar charts for profiles. Every chart is also an argument, so each one is followed by open questions for students to investigate, and a reminder that correlation is not causation.
+**[E_Beatles_Charts_Graphs.ipynb](02_Beatles_Tidy_Clean_Filter_Group_Chart/E_Beatles_Charts_Graphs.ipynb)**: A tour of the main chart types in [Plotly Express](https://plotly.com/python/plotly-express/), organized by the kind of question each one answers: bar charts for comparison, line charts for change over time, histograms and box plots for distributions, scatter and bubble plots for relationships, heatmaps for grids and correlations, and radar charts for profiles. Every chart is also an argument, so each one is followed by open questions for students to investigate, and a reminder that correlation is not causation.
 - Matching the chart to the question
 - Preparing data for charts with `groupby()` and `melt()`
 - Customizing titles, labels, colors, and hover information
