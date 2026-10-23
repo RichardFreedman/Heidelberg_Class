@@ -1,0 +1,24 @@
+Parsed context keys: Bach_BWV_0772
+Processed Bach_BWV_0772 - MEI path: MEI Sample/Bach_BWV_0772.mei
+Parsed context keys: Bach_BWV_0772
+Processed Bach_BWV_0772 - MEI path: MEI Sample/Bach_BWV_0772.mei
+Parsed context keys: Morley_1595_01_Go_ye_my_canzonettes, Morley_1595_02_When_lo_by_break, Bartok_Mikrokosmos_022, Bartok_Mikrokosmos_023, Morley_1595_03_Sweet_nymph, Bartok_Mikrokosmos_024, Bach_BWV_0772, Bach_BWV_0773, Bach_BWV_0774
+Processed Morley_1595_01_Go_ye_my_canzonettes - MEI path: MEI Sample/Morley_1595_01_Go_ye_my_canzonettes.mei
+Processed Morley_1595_02_When_lo_by_break - MEI path: MEI Sample/Morley_1595_02_When_lo_by_break.mei
+Processed Bartok_Mikrokosmos_022 - MEI path: MEI Sample/Bartok_Mikrokosmos_022.mei
+Processed Bartok_Mikrokosmos_023 - MEI path: MEI Sample/Bartok_Mikrokosmos_023.mei
+Processed Morley_1595_03_Sweet_nymph - MEI path: MEI Sample/Morley_1595_03_Sweet_nymph.mei
+Processed Bartok_Mikrokosmos_024 - MEI path: MEI Sample/Bartok_Mikrokosmos_024.mei
+Processed Bach_BWV_0772 - MEI path: MEI Sample/Bach_BWV_0772.mei
+Processed Bach_BWV_0773 - MEI path: MEI Sample/Bach_BWV_0773.mei
+Processed Bach_BWV_0774 - MEI path: MEI Sample/Bach_BWV_0774.mei
+Parsed context keys: Morley_1595_01_Go_ye_my_canzonettes, Morley_1595_02_When_lo_by_break, Bartok_Mikrokosmos_022, Bartok_Mikrokosmos_023, Morley_1595_03_Sweet_nymph, Bartok_Mikrokosmos_024, Bach_BWV_0772, Bach_BWV_0773, Bach_BWV_0774
+Processed Morley_1595_01_Go_ye_my_canzonettes - MEI path: MEI Sample/Morley_1595_01_Go_ye_my_canzonettes.mei
+Processed Morley_1595_02_When_lo_by_break - MEI path: MEI Sample/Morley_1595_02_When_lo_by_break.mei
+Processed Bartok_Mikrokosmos_022 - MEI path: MEI Sample/Bartok_Mikrokosmos_022.mei
+Processed Bartok_Mikrokosmos_023 - MEI path: MEI Sample/Bartok_Mikrokosmos_023.mei
+Processed Morley_1595_03_Sweet_nymph - MEI path: MEI Sample/Morley_1595_03_Sweet_nymph.mei
+Processed Bartok_Mikrokosmos_024 - MEI path: MEI Sample/Bartok_Mikrokosmos_024.mei
+Processed Bach_BWV_0772 - MEI path: MEI Sample/Bach_BWV_0772.mei
+Processed Bach_BWV_0773 - MEI path: MEI Sample/Bach_BWV_0773.mei
+Processed Bach_BWV_0774 - MEI path: MEI Sample/Bach_BWV_0774.mei
